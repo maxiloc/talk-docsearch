@@ -104,11 +104,16 @@
 
       <section>
         <h3>How does it work?</h3>
-        <ol>
+        <ol class="u-size-big u-list-large-space">
           <li>We configure your settings</li>
           <li>We give you a few lines of JavaScript to add to your page</li>
           <li>Crawler runs every 24 hours, indexing your HTML pages</li>
-        </ol>
+          </ol>
+        <pre><code class="language-js">docsearch({
+  apiKey: '4815162342b4d455d34db33fc4f3f00d',
+  indexName: 'writethedocs',
+  inputSelector: '#search-input'
+});</code></pre>
       </section>
 
       <section>
@@ -123,6 +128,9 @@
               <div class="column">
                 <img src="./img/logo-react.png" alt="Get started">
               </div>
+              <div class="column">
+                <img src="./img/logo-docker.png" alt="Get started">
+              </div>
               <div class="column u-align-middle">
                 <img src="./img/logo-scala.png" alt="Get started">
               </div>
@@ -136,6 +144,7 @@
             <ul class="u-size-big u-list-large-space">
               <li>No account needed</li>
               <li>Just fill url and email</li>
+              <li>Open-Source</li>
               <li>Forever free</li>
             </ul>
           </div>
