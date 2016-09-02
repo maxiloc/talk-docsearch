@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>DocSearch in 5mn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="twitter:creator" content="@algolia">
+  <meta property="og:url" content="http://talks.pixelastic.com/docsearch-writethedocs/">
+  <meta name="description" content="The easiest way to add search to your documentation.">
+  <meta name="twitter:description" content="The easiest way to add search to your documentation.">
+  <meta property="og:description" content="The easiest way to add search to your documentation.">
+  <meta name="twitter:site" content="DocSearch in 5mn">
+  <meta property="og:title" content="DocSearch in 5mn">
+  <meta property="og:site_name" content="DocSearch in 5mn">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://talks.pixelastic.com/docsearch-writethedocs/img/opengraph.png">
+  <meta property="og:image" content="http://talks.pixelastic.com/docsearch-writethedocs/img/opengraph.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="shortcut icon" href="./favicon.ico">
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <a class="demo-link" target="_blank" href="https://community.algolia.com/docsearch/">https://community.algolia.com/docsearch/</a>
+  <div class="reveal">
+    <div class="slides">
+
+      <!--HOME-->
+      <section>
+        <h1 class="home--title">
+          DocSearch
+          <img src="./img/docsearch-logo.svg" class="home--logo" />
+        </h1>
+        <p class="home--headline">The easiest way to add search to your documentation.</p>
+        <aside class="notes">
+          Even with the most complete and well-written documentation, finding relevant information is still an issue.
+        </aside>
+      </section>
+
+      <!--SEARCH IS HARD-->
+      <section>
+        <h3>Searching is painful</h3>
+        <div class="row">
+          <div class="column u-align-middle">
+            <ul class="u-size-big u-list-large-space">
+              <li><code>Ctrl + F</code></li>
+              <li>No typo-tolerance</li>
+              <li>Slow</li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="./img/ctrlf.png" alt="Ctrl+F">
+            <img src="./img/ctrlf.gif" alt="Ctrl+F">
+          </div>
+        </div>
+        <aside class="notes">
+          Not all documentations have a good search, you often have to rely on the good-old Ctrl-F and all its quirks.
+        </aside>
+      </section>
+
+      <section>
+        <h3>Scratching our own itch</h3>
+        <div class="row">
+          <div class="column u-align-middle">
+            <ul class="u-size-big u-list-large-space">
+              <li>Hosted search API</li>
+              <li>Fast and relevant</li>
+              <li>Instant search UI</li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="./img/autocomplete.gif" alt="Autocomplete">
+          </div>
+        </div>
+        <aside class="notes">
+          We're Algolia, we build a hosted search API and used to build stuff like this.
+          Surely there is something we could do.
+        </aside>
+      </section>
+
+      <section>
+        <h3>Meet DocSearch</h3>
+        <div class="row">
+          <div class="column u-align-middle">
+            <ul class="u-size-big u-list-large-space">
+              <li>Typo-tolerant</li>
+              <li>Ultra-fast</li>
+              <li>Free</li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="./img/react.gif" alt="DocSearch in action">
+          </div>
+        </div>
+        <aside class="notes">
+          So we built DocSearch, a crawler that will read all your HTML documentation and push it to an Algolia
+          index so you can search easily into it.
+        </aside>
+      </section>
+
+      <section>
+        <h3>How does it work?</h3>
+        <ol>
+          <li>We configure your settings</li>
+          <li>We give you a few lines of JavaScript to add to your page</li>
+          <li>Crawler runs every 24 hours, indexing your HTML pages</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>Need search?</h3>
+        <div class="row">
+          <div class="column">
+            <img src="./img/form.png" alt="Get started">
+          </div>
+          <div class="column u-align-middle">
+            <p>Join the growing list:</p>
+            <div class="row">
+              <div class="column">
+                <img src="./img/logo-react.png" alt="Get started">
+              </div>
+              <div class="column u-align-middle">
+                <img src="./img/logo-scala.png" alt="Get started">
+              </div>
+              <div class="column">
+                <img src="./img/logo-vuejs.png" alt="Get started">
+              </div>
+              <div class="column u-align-middle">
+                <img src="./img/logo-apiary.png" alt="Get started">
+              </div>
+            </div>
+            <ul class="u-size-big u-list-large-space">
+              <li>No account needed</li>
+              <li>Just fill url and email</li>
+              <li>Forever free</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/zepto.min.js"></script>
+  <script src="js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="app.js"></script>
+  <script>require('app').default.init()</script>
+</body>
+
+</html>

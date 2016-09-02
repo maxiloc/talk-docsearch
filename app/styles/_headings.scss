@@ -1,0 +1,43 @@
+/* Headers */
+.reveal {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Title", Arial, sans-serif;
+    text-align: left;
+  }
+
+  // Big full page title
+  // Usually used for the first slide or section separators
+  h1 {
+    font-family: 'Title';
+    text-align: center;
+    font-size: 8rem;
+  }
+
+  // Full page title
+  // Same as before, but slightly smaller. Bigger shadow to work on background
+  // images
+  h2 {
+    font-family: 'Title';
+    text-align: left;
+    font-size: 5rem;
+  }
+
+  // Section title
+  h3 {
+    text-shadow: 2px 2px 1px black;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  // Smaller section title
+  h4 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  // Smaller section title
+  h5 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}

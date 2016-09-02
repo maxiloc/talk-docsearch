@@ -1,0 +1,59 @@
+// Titles
+@font-face {
+  font-family: 'Title';
+  src: url('./fonts/Raleway.eot');
+  src: url('./fonts/Raleway.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Raleway.woff2') format('woff2'),
+       url('./fonts/Raleway.woff') format('woff'),
+       url('./fonts/Raleway.ttf') format('truetype'),
+       url('./fonts/Raleway.svg#ralewayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TitleBold';
+  src: url('./fonts/RalewayBold.eot');
+  src: url('./fonts/RalewayBold.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/RalewayBold.woff2') format('woff2'),
+       url('./fonts/RalewayBold.woff') format('woff'),
+       url('./fonts/RalewayBold.ttf') format('truetype'),
+       url('./fonts/RalewayBold.svg#ralewaybold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Text
+@font-face {
+  font-family: 'Text';
+  src: url('./fonts/Raleway.eot');
+  src: url('./fonts/Raleway.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Raleway.woff2') format('woff2'),
+       url('./fonts/Raleway.woff') format('woff'),
+       url('./fonts/Raleway.ttf') format('truetype'),
+       url('./fonts/Raleway.svg#ralewayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Text';
+  src: url('./fonts/Raleway.eot');
+  src: url('./fonts/Raleway.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Raleway.woff2') format('woff2'),
+       url('./fonts/Raleway.woff') format('woff'),
+       url('./fonts/Raleway.ttf') format('truetype'),
+       url('./fonts/Raleway.svg#ralewayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Code
+@font-face {
+  font-family: 'Code';
+  src: url('./fonts/DejaVuSansMono.eot');
+  src: url('./fonts/DejaVuSansMono.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/DejaVuSansMono.woff') format('woff'),
+       url('./fonts/DejaVuSansMono.ttf') format('truetype'),
+       url('./fonts/DejaVuSansMono.svg#dejavu_sans_monobook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

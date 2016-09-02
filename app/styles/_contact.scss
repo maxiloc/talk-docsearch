@@ -1,0 +1,72 @@
+.reveal {
+  .contact {
+    font-size: 0;
+    font-family: 'TitleBold';
+  }
+  .contact--part {
+    position: relative;
+    display: inline-block;
+    font-size: 8rem;
+    line-height: 1;
+    text-shadow:3px 4px 5px rgba(0,0,0,0.75);
+    // Name of the contact part
+    &:after {
+      content:attr(data-name);
+      position:absolute;
+      display:block;
+      right:0;
+      left:0;
+      text-align:center;
+      font-size:2.25rem;
+      font-weight:normal;
+    }
+    // Ruler to show which part is selected
+    &:before {
+      content:"";
+      position:absolute;
+      display:block;
+      right:0;
+      left:0;
+      border:3px solid white;
+      height:10px;
+    }
+  }
+
+  // Full email
+  .contact--part__mail {
+    &:after {
+      bottom: -5rem;
+    }
+    &:before {
+      bottom: -3rem;
+      border-top: none;
+    }
+  }
+  // Twitter handle
+  .contact--part__twitter {
+    // Hack to handle the new lines in the markup, while still keeping items
+    // aligned
+    margin-right: -24px;
+    margin-left: -24px;
+    &:after {
+      bottom: -2rem;
+      left: -4.5rem;
+    }
+    &:before {
+      bottom: 0rem;
+      left: -4.5rem;
+      border-top: none;
+    }
+  }
+  // Website
+  .contact--part__website {
+    &:after {
+      top: -2.5rem;
+    }
+    &:before {
+      top: -.5rem;
+      left: -1.5rem;
+      border-bottom: none;
+    }
+  }
+}
